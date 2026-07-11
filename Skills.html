@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills — Dr. Naman Jain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FAF9F5; color: #1A1915; font-family: 'Source Sans 3', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #0B3D91; text-decoration: none; }
+  a:hover { color: #082E6E; text-decoration: underline; }
+  ::selection { background: #0B3D91; color: #FAF9F5; }
+</style>
+</helmet>
+
+<div style="min-height:100vh; display:flex; flex-direction:column">
+
+  <nav style="position:sticky; top:0; z-index:50; background:rgba(250,249,245,0.92); backdrop-filter:blur(8px); border-bottom:1px solid #E4E2DA">
+    <div style="max-width:1080px; margin:0 auto; padding:0 24px; height:60px; display:flex; align-items:center; justify-content:space-between; gap:24px">
+      <a href="index.html" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:16px; letter-spacing:-0.02em; color:#1A1915">Dr. Naman Jain</a>
+      <div style="display:flex; gap:22px; flex-wrap:wrap; font-size:14px; font-weight:600">
+        <a href="index.html" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Home</a>
+        <a href="Experience.html" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Experience</a>
+        <a href="Skills.html" style="color:#0B3D91" style-hover="text-decoration:none">Skills</a>
+        <a href="Research.html" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Research &amp; Education</a>
+        <a href="index.html#contact" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section data-screen-label="Skills" style="background:#1A1915; color:#FAF9F5; flex:1">
+    <div style="max-width:1080px; margin:0 auto; padding:72px 24px 80px">
+      <h1 style="margin:0 0 12px; font-family:'Archivo',sans-serif; font-weight:800; font-size:40px; letter-spacing:-0.02em; color:#FAF9F5">Core Competencies</h1>
+      <p style="margin:0 0 40px; max-width:640px; font-size:16px; line-height:1.6; color:#C9C6BB">Eight years of hands-on work across the full medical-imaging analysis stack — from raw scanner data to validated, reproducible quantitative results.</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1px; background:#3A382F; border:1px solid #3A382F">
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Medical Imaging</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">Neuroimaging, MRI/fMRI, biomedical image processing, functional imaging, image preprocessing, registration, quality control</div>
+        </div>
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Data Science &amp; Statistics</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">Time-series analysis, signal processing, regression/classification workflows, exploratory data analysis, quantitative visualization</div>
+        </div>
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Programming</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">Python, MATLAB, Bash, UNIX/Linux scripting, C (working knowledge)</div>
+        </div>
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Python / Data Tools</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">NumPy, Pandas, SciPy, scikit-learn, statsmodels, NiBabel, Nilearn, matplotlib, Plotly</div>
+        </div>
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Neuroimaging Tools</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">fMRIPrep, FSL, SPM, AFNI, FreeSurfer, ANTs, ANTsPy, FSL FLIRT/FNIRT, SPM normalization, BIDS workflows</div>
+        </div>
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Image Visualization / QC</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">FSLeyes, ITK-SNAP, Freeview, Nilearn plotting</div>
+        </div>
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Formats &amp; Standards</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">DICOM, NIfTI, raw medical imaging data, BIDS</div>
+        </div>
+        <div style="background:#1A1915; padding:24px; display:flex; flex-direction:column; gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:#9DB9E8">Currently Expanding</div>
+          <div style="font-size:15px; line-height:1.6; color:#C9C6BB">C++, PyTorch, TensorFlow, healthcare AI validation and medical-device regulatory awareness</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#1A1915; color:#FAF9F5; border-top:1px solid #3A382F">
+    <div style="max-width:1080px; margin:0 auto; padding:32px 24px; display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; font-size:14px">
+      <div style="display:flex; gap:24px; flex-wrap:wrap">
+        <a href="mailto:namanjain630@gmail.com" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">namanjain630@gmail.com</a>
+        <a href="https://www.linkedin.com/in/njainmpi/" target="_blank" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">LinkedIn</a>
+        <a href="https://github.com/drnjain" target="_blank" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fyGZhzIAAAAJ&hl=en" target="_blank" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">Google Scholar</a>
+      </div>
+      <span style="color:#8A877C">Dr. Naman Jain · Tübingen, Germany</span>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

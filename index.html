@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Naman Jain — Neuroimaging Data Scientist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FAF9F5; color: #1A1915; font-family: 'Source Sans 3', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #0B3D91; text-decoration: none; }
+  a:hover { color: #082E6E; text-decoration: underline; }
+  ::selection { background: #0B3D91; color: #FAF9F5; }
+</style>
+</helmet>
+
+<div style="min-height:100vh; display:flex; flex-direction:column">
+
+  <!-- ============ NAV ============ -->
+  <nav style="position:sticky; top:0; z-index:50; background:rgba(250,249,245,0.92); backdrop-filter:blur(8px); border-bottom:1px solid #E4E2DA">
+    <div style="max-width:1080px; margin:0 auto; padding:0 24px; height:60px; display:flex; align-items:center; justify-content:space-between; gap:24px">
+      <a href="index.html" style="font-family:'Archivo',sans-serif; font-weight:800; font-size:16px; letter-spacing:-0.02em; color:#1A1915">Dr. Naman Jain</a>
+      <div style="display:flex; gap:22px; flex-wrap:wrap; font-size:14px; font-weight:600">
+        <a href="index.html" style="color:#0B3D91" style-hover="text-decoration:none">Home</a>
+        <a href="Experience.html" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Experience</a>
+        <a href="Skills.html" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Skills</a>
+        <a href="Research.html" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Research &amp; Education</a>
+        <a href="Publications.html" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Publications</a>
+        <a href="#contact" style="color:#1A1915" style-hover="color:#0B3D91; text-decoration:none">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" data-screen-label="Hero" style="border-bottom:1px solid #E4E2DA">
+    <div style="max-width:1080px; margin:0 auto; padding:80px 24px 72px; display:grid; grid-template-columns:1fr auto; gap:48px; align-items:center">
+      <div style="display:flex; flex-direction:column; gap:20px; min-width:0">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#0B3D91">Tübingen, Germany</div>
+        <h1 style="margin:0; font-family:'Archivo',sans-serif; font-weight:900; font-size:clamp(44px, 7vw, 76px); line-height:0.98; letter-spacing:-0.03em">Dr. Naman&nbsp;Jain</h1>
+        <p style="margin:0; font-family:'Archivo',sans-serif; font-weight:600; font-size:clamp(18px, 2.4vw, 24px); line-height:1.3; color:#1A1915">Neuroimaging Data Scientist<span style="color:#0B3D91"> / </span>Neuroimaging Algorithm Developer</p>
+        <p style="margin:0; max-width:560px; font-size:17px; line-height:1.6; color:#4A4840">PhD-trained neuroimaging researcher with <strong>8+ years</strong> in neuroimage analysis, algorithm development, and scientific computing — building reproducible pipelines for complex multidimensional imaging datasets, from raw DICOM to validated quantitative results.</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px">
+          <a href="mailto:namanjain630@gmail.com" style="display:inline-flex; align-items:center; padding:12px 22px; background:#0B3D91; color:#FAF9F5; font-weight:600; font-size:15px; border-radius:6px" style-hover="background:#082E6E; color:#FAF9F5; text-decoration:none">Email me</a>
+          <a href="https://www.linkedin.com/in/njainmpi/" target="_blank" style="display:inline-flex; align-items:center; padding:12px 22px; border:1.5px solid #1A1915; color:#1A1915; font-weight:600; font-size:15px; border-radius:6px" style-hover="background:#1A1915; color:#FAF9F5; text-decoration:none">LinkedIn</a>
+          <a href="https://github.com/drnjain" target="_blank" style="display:inline-flex; align-items:center; padding:12px 22px; border:1.5px solid #1A1915; color:#1A1915; font-weight:600; font-size:15px; border-radius:6px" style-hover="background:#1A1915; color:#FAF9F5; text-decoration:none">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=fyGZhzIAAAAJ&hl=en" target="_blank" style="display:inline-flex; align-items:center; padding:12px 22px; border:1.5px solid #1A1915; color:#1A1915; font-weight:600; font-size:15px; border-radius:6px" style-hover="background:#1A1915; color:#FAF9F5; text-decoration:none">Google Scholar</a>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:10px">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="portrait" shape="circle" placeholder="Drop your portrait here" style="width:220px; height:220px" hint-size="220px,220px"></x-import>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SUMMARY / POINTERS ============ -->
+  <section data-screen-label="Overview" style="max-width:1080px; margin:0 auto; padding:72px 24px; width:100%; box-sizing:border-box">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px">
+      <a href="Experience.html" style="display:flex; flex-direction:column; gap:12px; padding:28px; border:1px solid #E4E2DA; border-radius:8px; color:#1A1915; background:#FFFFFF" style-hover="border-color:#0B3D91; text-decoration:none; color:#1A1915">
+        <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; letter-spacing:-0.02em">Experience</div>
+        <div style="font-size:15px; line-height:1.55; color:#4A4840">Max Planck Institute, MGH Martinos Center, The University of Queensland — research roles across Germany, USA, and Australia.</div>
+        <div style="font-size:14px; font-weight:600; color:#0B3D91; margin-top:auto">View experience →</div>
+      </a>
+      <a href="Skills.html" style="display:flex; flex-direction:column; gap:12px; padding:28px; border:1px solid #E4E2DA; border-radius:8px; color:#1A1915; background:#FFFFFF" style-hover="border-color:#0B3D91; text-decoration:none; color:#1A1915">
+        <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; letter-spacing:-0.02em">Skills</div>
+        <div style="font-size:15px; line-height:1.55; color:#4A4840">Python, MATLAB, Bash · MRI/fMRI pipelines · DICOM/NIfTI/BIDS · FSL, SPM, AFNI, FreeSurfer, ANTs, fMRIPrep.</div>
+        <div style="font-size:14px; font-weight:600; color:#0B3D91; margin-top:auto">View skills →</div>
+      </a>
+      <a href="Research.html" style="display:flex; flex-direction:column; gap:12px; padding:28px; border:1px solid #E4E2DA; border-radius:8px; color:#1A1915; background:#FFFFFF" style-hover="border-color:#0B3D91; text-decoration:none; color:#1A1915">
+        <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; letter-spacing:-0.02em">Research &amp; Education</div>
+        <div style="font-size:15px; line-height:1.55; color:#4A4840">PhD in Neuroscience/Neuroimaging (UQ), selected project areas, languages.</div>
+        <div style="font-size:14px; font-weight:600; color:#0B3D91; margin-top:auto">View research →</div>
+      </a>
+      <a href="Publications.html" style="display:flex; flex-direction:column; gap:12px; padding:28px; border:1px solid #E4E2DA; border-radius:8px; color:#1A1915; background:#FFFFFF" style-hover="border-color:#0B3D91; text-decoration:none; color:#1A1915">
+        <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; letter-spacing:-0.02em">Publications</div>
+        <div style="font-size:15px; line-height:1.55; color:#4A4840">Peer-reviewed work in Magnetic Resonance in Medicine and ISMRM, plus awards and recognition.</div>
+        <div style="font-size:14px; font-weight:600; color:#0B3D91; margin-top:auto">View publications →</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer id="contact" data-screen-label="Contact" style="background:#1A1915; color:#FAF9F5; margin-top:auto">
+    <div style="max-width:1080px; margin:0 auto; padding:64px 24px; display:flex; flex-direction:column; gap:28px">
+      <h2 style="margin:0; font-family:'Archivo',sans-serif; font-weight:800; font-size:32px; letter-spacing:-0.02em; color:#FAF9F5">Get in touch</h2>
+      <div style="display:flex; gap:32px; flex-wrap:wrap; font-size:15px">
+        <a href="mailto:namanjain630@gmail.com" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">namanjain630@gmail.com</a>
+        <span style="color:#C9C6BB">+49 151 4010 9456</span>
+        <a href="https://www.linkedin.com/in/njainmpi/" target="_blank" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">LinkedIn / njainmpi</a>
+        <a href="https://github.com/drnjain" target="_blank" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">GitHub / drnjain</a>
+        <a href="https://scholar.google.com/citations?user=fyGZhzIAAAAJ&hl=en" target="_blank" style="color:#FAF9F5; font-weight:600" style-hover="color:#9DB9E8">Google Scholar</a>
+      </div>
+      <div style="display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; border-top:1px solid #3A382F; padding-top:20px; font-size:13px; color:#8A877C">
+        <span>English — Fluent · Hindi — Native · German — Basic</span>
+        <span>Tübingen, Germany</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>
